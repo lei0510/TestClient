@@ -51,10 +51,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\GameMain\Scripts\BuidDataComponent.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
-     <Compile Include="Assets\Example\ProcedureExample.cs" />
-     <Compile Include="Assets\GameMain\Scripts\GameEntry.cs" />
+     <Compile Include="Assets\GameMain\Scripts\GameMain.cs" />
+     <Compile Include="Assets\GameMain\Scripts\ProcedureLaunch.cs" />
+     <Compile Include="Assets\GameMain\Scripts\GameMain.Custom.cs" />
+     <Compile Include="Assets\GameMain\Scripts\GameMain.Build.cs" />
      <None Include="Assets\GameFramework\Libraries\link.xml" />
      <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
  <Reference Include="UnityEngine">
@@ -273,11 +276,11 @@
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.0a19/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
- <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>D:/Git/TestClient/TestClient/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
- </Reference>
  <Reference Include="GameFramework">
  <HintPath>D:/Git/TestClient/TestClient/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>D:/Git/TestClient/TestClient/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.0a19/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -683,13 +686,13 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityGameFramework.Editor.csproj">
-      <Project>{e5e81d89-37ff-971a-82a4-eb8e827a1aa1}</Project>
-      <Name>UnityGameFramework.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityGameFramework.Runtime.csproj">
       <Project>{eb9a0534-6b12-8d35-3d4d-910e898b5045}</Project>
       <Name>UnityGameFramework.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityGameFramework.Editor.csproj">
+      <Project>{e5e81d89-37ff-971a-82a4-eb8e827a1aa1}</Project>
+      <Name>UnityGameFramework.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

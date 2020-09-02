@@ -274,14 +274,14 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.0a19/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="ICSharpCode.NRefactory">
- <HintPath>D:/Git/TestClient/TestClient/Library/PackageCache/com.unity.render-pipelines.core@8.1.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+ <Reference Include="GameFramework">
+ <HintPath>D:/Git/TestClient/TestClient/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.SharpZipLib">
  <HintPath>D:/Git/TestClient/TestClient/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
- <Reference Include="GameFramework">
- <HintPath>D:/Git/TestClient/TestClient/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
+ <Reference Include="ICSharpCode.NRefactory">
+ <HintPath>D:/Git/TestClient/TestClient/Library/PackageCache/com.unity.render-pipelines.core@8.1.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>D:/Git/TestClient/TestClient/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -700,13 +700,13 @@
       <Project>{b700eae0-b2e4-783c-ccb3-427c2780bf29}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityGameFramework.Editor.csproj">
-      <Project>{e5e81d89-37ff-971a-82a4-eb8e827a1aa1}</Project>
-      <Name>UnityGameFramework.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityGameFramework.Runtime.csproj">
       <Project>{eb9a0534-6b12-8d35-3d4d-910e898b5045}</Project>
       <Name>UnityGameFramework.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityGameFramework.Editor.csproj">
+      <Project>{e5e81d89-37ff-971a-82a4-eb8e827a1aa1}</Project>
+      <Name>UnityGameFramework.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

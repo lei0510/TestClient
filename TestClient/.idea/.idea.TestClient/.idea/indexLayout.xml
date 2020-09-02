@@ -22,8 +22,10 @@
       <Path>.idea</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
+      <Path>Temp</Path>
       <Path>UserSettings</Path>
       <Path>obj</Path>
+      <Path>插件</Path>
     </explicitExcludes>
   </component>
 </project>
